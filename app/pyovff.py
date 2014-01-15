@@ -31,7 +31,7 @@ program_name = 'pyovff'
 program_version = '0.1.3'
 
 # datatbase path
-database = '/usr/share/ovff/database/boshiamy.db'
+database = 'res/boshiamy.db'
 
 def help():
     sys.stderr.write(
