@@ -25,13 +25,14 @@
 import sys
 import sqlite3
 import getopt
+from os.path import realpath, join, dirname
 
 # Program Information
 program_name = 'pyovff'
 program_version = '0.1.3'
 
 # datatbase path
-database = 'res/boshiamy.db'
+database = join(dirname(realpath(__file__)), 'res/boshiamy.db')
 
 def help():
     sys.stderr.write(
