@@ -1,0 +1,66 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <title>嘸蝦米文翻譯機</title>
+
+  <link href="/static/css/bootstrap.css" rel="stylesheet">
+  <link href="/static/css/style.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <div class="navbar navbar-default" role="navigation">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">嘸蝦米文翻譯機</a>
+      </div>
+      <div class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+          <li><a href="#api">JSON API</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="http://azhuang.me">作者</a></li>
+        </ul>
+      </div><!--/.nav-collapse -->
+    </div>
+    <div class="jumbotron">
+      <div class="main">
+        <div class="text-area">
+          <h3>嘸蝦米文</h3>
+          <textarea class="form-control" id="ovff" rows="16"></textarea>
+        </div>
+        <div class="controller">
+          <div class="controller-buttons">
+            <input type="button" id="to_chinese" value="=>"><br />
+            <input type="button" id="to_ovff" value="<=">
+          </div>
+        </div>
+        <div class="text-area">
+          <h3>中文</h3>
+          <textarea class="form-control" id="chinese" rows="16"></textarea>
+        </div>
+      </div>
+      <h3 id="api">JSON API</h3>
+      <ul>
+        <li><code>/convert.json</code><br />
+        <pre>
+Method: POST
+Send: {op: "encode" | "decode", text: text_to_convert}
+Reply: {result: result_text}
+</pre>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <script src="/static/js/jquery-1.10.2.min.js"></script>
+  <script src="/static/js/bootstrap.min.js"></script>
+  <script src="/static/js/ovff.js"></script>
+</body>
+</html>

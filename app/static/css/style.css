@@ -1,0 +1,32 @@
+body {
+  padding-top: 20px;
+  padding-bottom 20px;
+  background: #B7BFFD;
+}
+
+.main {
+  margin: 0 auto;
+  height: 450px;
+}
+
+.controller {
+  float: left;
+  width: 50px;
+  height: 100%;
+  position: relative;
+}
+
+.controller-buttons {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  margin-left: -20px;
+  margin-top: -25px;
+}
+
+.text-area {
+  float: left;
+  margin: 10px;
+  width: 45%;
+  height: 100%;
+}
