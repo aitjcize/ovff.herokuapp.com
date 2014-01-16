@@ -22,4 +22,9 @@ $(document).ready(function() {
       });
     }
   });
+
+  $(".clear-btn").click(function() {
+    var target = $($(this).data("target"));
+    target.val("");
+  });
 })

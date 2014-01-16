@@ -1,33 +1,53 @@
 body {
   padding-top: 20px;
   padding-bottom 20px;
-  background: #ABCF5D;
+  background: #C1E671;
+}
+
+.fb-like {
+  float: left;
+  padding-top: 15px;
 }
 
 .jumbotron {
-  padding-top: 20px;
-  padding-bottom: 30px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 20px !important;
+  padding-right: 20px !important;
+  padding-top: 20px !important;
+  padding-bottom: 30px !important;
 }
 
-.main {
-  margin: 0 auto;
-  height: 300px;
+.row {
+  margin: 10px;
+  padding: 0px;
+  height: 320px;
 }
 
 h3 {
   margin-top: 10px;
 }
 
+.box-title {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.clear-btn {
+  display: inline-block;
+  vertical-align: middle;
+  align: middle;
+  float: right;
+}
+
 .controller {
-  float: left;
-  width: 50px;
+  display: inline-block;
+  width: 10%;
   height: 100%;
+  float: left;
   position: relative;
 }
 
 .controller-buttons {
+  display: inline-block;
   position: absolute;
   top: 40%;
   left: 50%;
@@ -36,13 +56,8 @@ h3 {
 }
 
 .text-area {
-  float: left;
-  margin: 10px;
+  display: inline-block;
   width: 45%;
-  height: 100%;
+  float: left;
 }
 
-.fb-like {
-  float: left;
-  padding-top: 15px;
-}
