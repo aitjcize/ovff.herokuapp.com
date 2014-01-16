@@ -1,4 +1,10 @@
 $(document).ready(function() {
+  function load_preset() {
+    $.get('/static/preset.txt', function(data) {
+      $('#ovff').val(data);
+    });
+  }
+
   $("#to_chinese").click(function() {
     var content = $('#ovff').val();
     if (content.length) {
@@ -28,7 +34,9 @@ $(document).ready(function() {
     target.val("");
   });
 
-  $.get('/static/preset.txt', function(data) {
-    $('#ovff').val(data);
+  $(".load-preset-btn").click(function() {
+    load_preset();
   });
+
+  load_preset();
 })

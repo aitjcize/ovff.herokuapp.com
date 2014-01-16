@@ -45,6 +45,11 @@ h3 {
   float: right;
 }
 
+.load-preset-btn {
+  float: right;
+  margin-right: 5px;
+}
+
 .controller {
   display: inline-block;
   width: 10%;
