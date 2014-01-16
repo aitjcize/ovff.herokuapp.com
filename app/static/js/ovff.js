@@ -27,4 +27,8 @@ $(document).ready(function() {
     var target = $($(this).data("target"));
     target.val("");
   });
+
+  $.get('/static/preset.txt', function(data) {
+    $('#ovff').val(data);
+  });
 })
