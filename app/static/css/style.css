@@ -1,12 +1,19 @@
 body {
   padding-top: 20px;
   padding-bottom 20px;
-  background: #C1E671;
+  background: #A9CFFF;
 }
 
 .fb-like {
   float: left;
-  padding-top: 15px;
+  margin-top: 20px;
+  margin-left: 10px;
+}
+
+.navbar-brand {
+  color: #333333 !important;
+  font-size: 25px;
+  line-height: 25px;
 }
 
 .jumbotron {
