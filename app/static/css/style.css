@@ -41,3 +41,8 @@ h3 {
   width: 45%;
   height: 100%;
 }
+
+.fb-like {
+  float: left;
+  padding-top: 15px;
+}

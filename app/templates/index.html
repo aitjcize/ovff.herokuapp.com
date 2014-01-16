@@ -2,6 +2,7 @@
 <html>
 <head>
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta property="og:title" content="嘸蝦米文翻譯機"/>
 
   <title>嘸蝦米文翻譯機</title>
 
@@ -19,6 +20,16 @@
   </script>
 </head>
 <body>
+
+  <div id="fb-root"></div>
+  <script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/zh_TW/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+  </script>
   <div class="container">
     <div class="navbar navbar-default" role="navigation">
       <div class="navbar-header">
@@ -29,13 +40,13 @@
           <span class="icon-bar"></span>
         </button>
         <a class="navbar-brand" href="#">嘸蝦米文翻譯機</a>
+        <div class="fb-like" data-href="http://ovff.herokuapp.com/"
+          data-layout="standard" data-action="like" data-show-faces="true"
+          data-share="true"></div>
       </div>
       <div class="navbar-collapse collapse">
-        <ul class="nav navbar-nav">
-          <li><a href="#api">JSON API</a></li>
-        </ul>
         <ul class="nav navbar-nav navbar-right">
-          <li><a href="http://azhuang.me">作者</a></li>
+          <li><a href="http://azhuang.me">作者: AZ Huang</a></li>
         </ul>
       </div><!--/.nav-collapse -->
     </div>
